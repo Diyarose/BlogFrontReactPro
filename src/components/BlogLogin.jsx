@@ -23,7 +23,8 @@ const readValue=()=>{
             console.log(response.data)
             if(response.data.status=="success")
                 {
-                    alert("succesfully added")
+                    sessionStorage.setItem("token",response.data.token)
+                    sessionStorage
                 }
                 else{
                     alert("error")
